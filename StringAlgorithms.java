@@ -7,13 +7,14 @@ public class StringAlgorithms {
      */
     public static String printCharacters(String word) {
         // TODO: Implement this method
-        
-        for ( int i = 0; i < word.length(); i++)
+        String returnString= ""; 
+        for ( int i = 0; i < word.length() ; i++)
         {
          String character = word.substring(i , i+1);
-         System.out.println(character);
+         returnString = returnString + word.substring(i, i +1) + "\n";
         }
-        return "" ;
+        
+        return returnString ;
     }
 
 
@@ -23,16 +24,16 @@ public class StringAlgorithms {
      * a new String with the characters reversed.
      */
     public static String reverseWord(String word) {
-        
+         String answer = "";
          for ( int b = 0; b < word.length(); b++)
         {
          String opposite = word.substring((word.length()-1) - b, word.length() - b );
-         System.out.print(opposite);
+         answer+=opposite;
         }
 
         
         // TODO: Implement this method
-        return "";
+        return answer;
     }
 
 
